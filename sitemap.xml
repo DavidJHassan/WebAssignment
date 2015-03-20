@@ -1,20 +1,35 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endfor %}
 
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'redirect' %}
-    <url>
-        <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+
+-<url>
+
+<loc>http://disposedcheese.github.io/WebAssignment/index.html</loc>
+
+<lastmod>2015-03-20T20:18:32+00:00</lastmod>
+
+</url>
+
+
+-<url>
+
+<loc>http://disposedcheese.github.io/WebAssignment/ibp.html</loc>
+
+<lastmod>2015-03-20T20:18:32+00:00</lastmod>
+
+</url>
+
+
+-<url>
+
+<loc>http://disposedcheese.github.io/WebAssignment/aw.html</loc>
+
+<lastmod>2015-03-20T20:18:32+00:00</lastmod>
+
+</url>
+
 </urlset>
